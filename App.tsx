@@ -59,6 +59,7 @@ function App(): JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
   useEffect(() => {
     ABC.show();
   }, []);
