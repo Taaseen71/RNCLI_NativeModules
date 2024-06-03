@@ -19,7 +19,7 @@ import {
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-import ABC from './src/NativeModules/GetDeviceID';
+import ABC, {showToast} from './src/NativeModules/GetDeviceID';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -61,7 +61,8 @@ function App(): JSX.Element {
   };
 
   useEffect(() => {
-    ABC.show();
+    // ABC.show();
+    showToast();
   }, []);
 
   useEffect(() => {
